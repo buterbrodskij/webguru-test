@@ -1,0 +1,19 @@
+<main class="products">
+  <header>
+    <app-products-header (onSort)="doSort($event)"></app-products-header>
+  </header>
+  <ul class="products__list">
+    <li *ngFor="let product of products[page]" class="products__list-item">
+      <app-product [product]="product"></app-product>
+    </li>
+  </ul>
+  <footer class="products__footer">
+    <ul class="products__footer-list">
+      <li *ngFor="let item of products; index as i" class="products__footer-item" [class]="page === i ? 'active' : ''">
+        <button (click)="changePage(i)">
+          {{i + 1}}
+        </button>
+      </li>
+    </ul>
+  </footer>
+</main>

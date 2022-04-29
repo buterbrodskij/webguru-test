@@ -1,0 +1,24 @@
+.product {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  margin-bottom: -1px;
+
+
+  &__title {
+    width: 25%;
+  }
+
+  &__rating {
+    width: 25%;
+  }
+
+  &__brand {
+    width: 25%;
+  }
+
+  &__sku {
+    width: 25%;
+  }
+}

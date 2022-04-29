@@ -1,0 +1,11 @@
+<ul class="products-header">
+  <li *ngFor="let item of header" class="products-header__item">
+    <button
+      (click)="item['sort'] ? sort(item['sort']) : null"
+      class="products-header__item-btn"
+      [class]="activeSort === item['sort'] ? 'active' : ''"
+    >
+      {{ item['name'] }}
+    </button>
+  </li>
+</ul>

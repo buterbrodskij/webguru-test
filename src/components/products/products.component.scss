@@ -1,0 +1,33 @@
+.products {
+
+
+  &__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    text-decoration: none;
+  }
+
+  &__footer {
+    margin-top: 20px;
+  }
+
+  &__footer-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__footer-item {
+    &.active {
+
+      button {
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+}
